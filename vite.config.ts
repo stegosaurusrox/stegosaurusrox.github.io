@@ -8,7 +8,6 @@ import { metaImagesPlugin } from "./vite-plugin-meta-images";
 export default defineConfig({
   plugins: [
     react(),
-    base: './',
     runtimeErrorOverlay(),
     tailwindcss(),
     metaImagesPlugin(),
@@ -24,6 +23,7 @@ export default defineConfig({
         ]
       : []),
   ],
+  base: './',
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
