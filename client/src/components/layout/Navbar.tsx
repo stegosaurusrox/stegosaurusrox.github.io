@@ -9,6 +9,7 @@ export default function Navbar() {
     { href: "/research", label: "Research" },
     { href: "/team", label: "Team" },
     { href: "/publications", label: "Publications" },
+    { href: "/collaborators", label: "Collaborators" },
   ];
 
   return (
