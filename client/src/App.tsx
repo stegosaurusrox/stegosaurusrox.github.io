@@ -10,6 +10,7 @@ import Home from "@/pages/Home";
 import Research from "@/pages/Research";
 import Team from "@/pages/Team";
 import Publications from "@/pages/Publications";
+import Collaborators from "@/pages/Collaborators";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/research" component={Research} />
       <Route path="/team" component={Team} />
       <Route path="/publications" component={Publications} />
+      <Route path="/collaborators" component={Collaborators} />
       <Route component={NotFound} />
     </Switch>
   );
