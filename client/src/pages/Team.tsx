@@ -64,24 +64,22 @@ export default function Team() {
 			
             {[
               { 
-                name: "Dr. Marlene Staginnus", 
-                role: "Research Associate", 
+                name: "Dr Marlene Staginnus", 
+                role: "Postdoctoral Research Associate", 
                 focus: "Biological Psychology", 
                 image: marlenePortrait,
-                degrees: "BSc Psychology, MSc Neuroscience, PhD Biological Psychology",
-                projects: "Investigating the neurobiological markers of resilience in aging populations using large-scale MRI datasets. Examining the intersection between early life adversity, epigenetic alterations, and cognitive decline later in life.",
-                researchGate: "https://www.researchgate.net/",
-                googleScholar: "https://scholar.google.com/"
+                projects: "Marlene is a postdoctoral researcher with a background in Psychology and Neuroscience. Previously, Marlene completed a PhD focusing on links between childhood maltreatment, youth antisocial behaviour and the brain. In her current work, Marlene investigates the relationship between different markers of biological age, as well as their associations with mental ageing to improve our understanding of trajectories of brain health across the lifespan. She is also a co-chair of the ENIGMA-Antisocial Behavior working group.",
+                linkedIn: "https://www.linkedin.com/in/marlene-staginnus-b8a3a4150/",
+                googleScholar: "https://scholar.google.co.uk/citations?user=JgjEm-wAAAAJ&hl=en"
               },
               { 
-                name: "Vilte Baltramonaityte", 
-                role: "Research Associate", 
-                focus: "Genetic Psychology", 
+                name: "Dr Vilte Baltramonaityte", 
+                role: "Postdoctoral Research Associate", 
+                focus: "Genetic Psychiatry",
                 image: viltePortrait,
-                degrees: "BSc Genetics, MSc Bioinformatics",
-                projects: "Analyzing epigenetic markers and DNA methylation patterns associated with psychiatric risk across multiple cohorts. Leveraging genome-wide association studies (GWAS) to pinpoint causal variants in neurodevelopment.",
-                researchGate: "https://www.researchgate.net/",
-                googleScholar: "https://scholar.google.com/"
+                projects: "Vilte is a postdoctoral researcher at the intersection of psychology, genetic epidemiology, and neuroimaging. She completed her PhD at the University of Bath, investigating the link between childhood maltreatment and psycho-cardiometabolic multimorbidity. Her current research examines the shared genetic basis of neuroimaging-based brain age models and applies genetic epidemiology approaches, such as Mendelian randomisation, polygenic scores, and epigenetic analyses, to uncover pathways underlying ageing as well as poor mental and physical health.",
+                googleScholar: "https://scholar.google.com/citations?user=I0dZ9fwAAAAJ&hl=en",
+                linkedIn: "https://www.linkedin.com/in/vilte-baltramonaityte-2a4317158/",
               },
               { 
                 name: "Faye Sanders", 
@@ -90,7 +88,7 @@ export default function Team() {
                 image: fayePortrait,
                 degrees: "BSc Psychology, MSc Clinical Psychology",
                 projects: "Exploring the role of DNA methylation in the relationship between housing quality and depressive symptoms. Conducting network analysis to understand the multifactorial causes of mood disorders in women.",
-                researchGate: "https://www.researchgate.net/",
+                linkedIn: "https://www.linkedIn.net/",
                 googleScholar: "https://scholar.google.com/"
               },
               { 
@@ -100,7 +98,7 @@ export default function Team() {
                 image: zoePortrait,
                 degrees: "BSc Cognitive Neuroscience, MSc Neuroimaging",
                 projects: "Studying how epigenetic age and brain age correlate in young people and their predictive value for future health. Applying machine learning models to functional MRI data to predict cognitive trajectories.",
-                researchGate: "https://www.researchgate.net/",
+                linkedIn: "https://www.linkedIn.net/",
                 googleScholar: "https://scholar.google.com/"
               },
               { 
@@ -110,7 +108,7 @@ export default function Team() {
                 image: sallyPortrait,
                 degrees: "BSc Experimental Psychology, MSc Cognitive Science",
                 projects: "Investigating the impact of prenatal stress on gestational epigenetic age and neurodevelopmental outcomes. Utilizing longitudinal birth cohort data to track behavioral phenotypes into early childhood.",
-                researchGate: "https://www.researchgate.net/",
+                linkedIn: "https://www.linkedIn.net/",
                 googleScholar: "https://scholar.google.com/"
               }
             ].map((member) => (
@@ -126,22 +124,22 @@ export default function Team() {
                   
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-6 text-primary-foreground overflow-y-auto custom-scrollbar">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Education</p>
+              
                     <p className="text-xs mb-3 leading-tight">{member.degrees}</p>
                     
-                    <p className="text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Current Focus</p>
+                   
                     <p className="text-xs leading-tight mb-4">{member.projects}</p>
                     
-                    {(member.researchGate || member.googleScholar) && (
+                    {(member.linkedIn || member.googleScholar) && (
                       <div className="mt-auto pt-2 border-t border-primary-foreground/20 flex gap-3">
                         {member.googleScholar && (
                           <a href={member.googleScholar} target="_blank" rel="noreferrer" className="text-xs font-medium hover:text-secondary transition-colors inline-flex items-center">
                             Google Scholar
                           </a>
                         )}
-                        {member.researchGate && (
-                          <a href={member.researchGate} target="_blank" rel="noreferrer" className="text-xs font-medium hover:text-secondary transition-colors inline-flex items-center">
-                            ResearchGate
+                        {member.linkedIn && (
+                          <a href={member.linkedIn} target="_blank" rel="noreferrer" className="text-xs font-medium hover:text-secondary transition-colors inline-flex items-center">
+                            LinkedIn
                           </a>
                         )}
                       </div>
