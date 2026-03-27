@@ -47,7 +47,7 @@ export default function Research() {
     {
       title: "The EarlyCause consortium: Investigating the lifelong effects of early life stress on health",
       status: "Completed",
-      description: "The EarlyCause project studied how early life stress, a well-established risk factor for depressive, cardiovascular and metabolic disorders individually, is a cause of multi-morbidity across these disorders.",
+      description: "The €6 million EU-funded EarlyCause project studied how early life stress, a well-established risk factor for depressive, cardiovascular and metabolic disorders individually, is a cause of multi-morbidity across these disorders.",
       tags: ["Early Life Stress", "DNA Methylation", "Lifestyle Factors", "Multimorbidity", "Depression", "Cardio-metabolic diseases"],
       funders: ["Horizon2020"]
     }
