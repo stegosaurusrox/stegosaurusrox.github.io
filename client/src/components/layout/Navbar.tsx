@@ -18,8 +18,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
         <Link href="/">
           <a className="flex flex-col">
-            <span className="font-serif text-2xl font-semibold leading-none text-primary">Esther's Lab</span>
-            <span className="text-xs font-medium text-muted-foreground uppercase tracking-widest mt-1">University of Bath</span>
+            <span className="font-serif text-2xl font-semibold leading-none text-primary">EMBA Lab</span>
+            <span className="text-xs font-medium text-muted-foreground uppercase tracking-widest mt-1">Epigenetics, Mental Health, Brain and Ageing Research Lab</span>
           </a>
         </Link>
         <div className="hidden md:flex gap-8">

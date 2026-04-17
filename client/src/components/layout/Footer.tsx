@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-primary text-primary-foreground py-16 mt-24">
       <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <h3 className="font-serif text-2xl mb-4 text-white">Esther's Lab</h3>
+          <h3 className="font-serif text-2xl mb-4 text-white">EMBA Lab</h3>
           <p className="text-primary-foreground/70 mb-4 max-w-sm">
             Investigating the genetic, epigenetic, and environmental factors shaping brain health and mental ageing at the University of Bath.
           </p>
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-4 md:px-8 mt-16 pt-8 border-t border-primary-foreground/10 text-sm text-primary-foreground/50 flex justify-between items-center">
-        <p>© {new Date().getFullYear()} Esther's Lab. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} EMBA Lab. All rights reserved.</p>
       </div>
     </footer>
   );

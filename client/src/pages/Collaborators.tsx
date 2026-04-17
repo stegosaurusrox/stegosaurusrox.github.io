@@ -25,7 +25,7 @@ export default function Collaborators() {
       coordinates: [40.42558371580474, -86.91576065034664] as [number, number]
     },
     {
-      name: "Prof. Alex Lussier",
+      name: "Assistant Prof. Alex Lussier",
       institution: "McLean Hospital and Harvard Medical School",
       location: "Boston, USA",
       coordinates: [42.39447201719427, -71.19020667773434] as [number, number]
@@ -61,10 +61,10 @@ export default function Collaborators() {
       coordinates: [52.17344060688156, 0.14451961867822855] as [number, number]
     },
      {
-      name: "Prof. Andrew Simpkin",
-      institution: "University of Galway",
-      location: "Galway, Ireland",
-      coordinates: [53.28004576498377, -9.061966541016233] as [number, number]
+      name: "Prof. Jeffrey Craig & Prof. Tim Silk",
+      institution: "Deakin University",
+      location: "Melbourne, Australia",
+      coordinates: [-38.19, 144.28] as [number, number]
     },
     {
       name: "Prof. Danai Dima",
@@ -85,11 +85,35 @@ export default function Collaborators() {
       coordinates: [51.02874126888428, 13.73181183632488] as [number, number]
     },
   {
-      name: "Prof. Gary Donohoe",
+      name: "Prof. Gary Donohoe & Prof. Andrew Simpkin",
       institution: "University of Galway",
       location: "Galway, Ireland",
       coordinates: [53.28004576498377, -9.061966541016233] as [number, number]
-    }
+    },
+   {
+      name: "Prof. Heather Zar",
+      institution: "University of Cape Town",
+      location: "Cape Town, South Africa",
+      coordinates: [-33.95, 18.46] as [number, number]
+    },
+   {
+      name: "Prof. Giovanni Salum",
+      institution: "Universidade Federal do Rio Grande do Sul",
+      location: "Porto Alegre, Brazil",
+      coordinates: [-30.03, -51.21] as [number, number]
+    },
+   {
+      name: "Prof. Sarah Medland",
+      institution: "QIMR Berghofer Medical Research Institute",
+      location: "Brisbane, Australia",
+      coordinates: [-27.44, 153.02] as [number, number]
+    },
+   {
+      name: "Prof. Paul Thompson",
+      institution: "Keck School of Medicine of USC",
+      location: "Los Angeles, USA",
+      coordinates: [34.05, -118.20] as [number, number]
+    }  
   ];
 
   return (
@@ -123,7 +147,6 @@ export default function Collaborators() {
                       <h4 className="font-semibold text-primary">{collab.name}</h4>
                       <p className="text-sm font-medium text-secondary-foreground mb-1">{collab.institution}</p>
                       <p className="text-xs text-muted-foreground mb-2">{collab.location}</p>
-                      <p className="text-xs border-t pt-2 mt-2"><strong>Focus:</strong> {collab.focus}</p>
                     </div>
                   </Popup>
                 </Marker>
@@ -147,7 +170,6 @@ export default function Collaborators() {
                 <div className="space-y-1 border-t border-border/50 pt-4 mt-4">
                   <p className="text-sm font-medium text-foreground">{collab.name}</p>
                   <p className="text-xs text-secondary-foreground">{collab.role}</p>
-                  <p className="text-xs text-muted-foreground mt-2 block">{collab.focus}</p>
                 </div>
               </div>
             ))}

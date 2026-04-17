@@ -18,7 +18,7 @@ export default function Team() {
     { name: "Lucy Waldren", role: "PhD Student (2021-2024)", now: "Postdoc at Bath" },
 	{ name: "Sophie Townend", role: "PhD Student (2022-2025)", now: "Postdoc at Bath" },
 	{ name: "Shir Dahan", role: "Visiting Researcher (2025)", now: "PhD in Galway" },
-	{ name: "Jola Layinka", role: "PhD Student (2023-2026)", now: "" },
+	{ name: "Jola Layinka", role: "PhD Student (2023-2026)", now: "Acaster Lloyd" },
 	{ name: "Tatiana Stratton", role: "MSc Student (2022-2023)", now: "Hollyport" },
 	{ name: "Georgia Zavitsanou", role: "MSc Student (2020-2021)", now: "DClin UCL" }
   ];
@@ -50,11 +50,12 @@ export default function Team() {
                     Professor Walton leads research focusing on genetics, epigenetics, and brain imaging to understand mental health and healthy aging.
                   </p>
                   <p>
-                    She leads the €1.5 million EU-funded BrainHealth project investigating brain aging and mental health across the lifespan using data from over 78,000 individuals. Her work heavily relies on causal inference methods like Mendelian randomization.
+                    She focusses on traits including depression, hyperactivity and cognition as well as mental health conditions such as anorexia nervosa and schizophrenia. As a co-director of the MIND consortium and as an active member of several ENIGMA working groups, she has a long track record of investigating brain imaging correlates of mental health conditions and how these link to genetic and epigenetic markers, in the context of development and aging. Her research is funded by Wellcome, UKRI and the EU.
+
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4">
-                  <a href="mailto:esther.walton@bath.ac.uk" className="inline-flex items-center text-sm font-medium text-primary hover:underline">
+                  <a href="mailto:e.walton@bath.ac.uk" className="inline-flex items-center text-sm font-medium text-primary hover:underline">
                     Contact Esther
                   </a>
                   <a href="https://scholar.google.com/citations?user=XgUThnUAAAAJ&hl=en" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-medium text-primary hover:underline">
@@ -122,7 +123,7 @@ export default function Team() {
                 googleScholar: "https://scholar.google.com/citations?user=WLiqDS8AAAAJ&hl=en"
               },
               { 
-                name: "Chris Townend", 
+                name: "Chris Townsend", 
                 role: "PhD Student", 
                 focus: "Computational Neuroimaging in Psychosis", 
                 image: chrisPortrait,
@@ -134,18 +135,22 @@ export default function Team() {
                 name: "Sally Turner", 
                 role: "PhD Student", 
                 focus: "Substance use and ADHD", 
-                image: sallyPortrait
+                image: sallyPortrait,
+				projects: "Sally is a PhD student with expertise in experimental psychology and psychopharmacology. Sally’s PhD research focusses on the psychobiological harms and medicinal potential of cannabis among people with and without ADHD. Sally uses a multidisciplinary approach, combining experimental, observational, longitudinal, genetic, and epigenetic methods. She is broadly interested in (1) the genetic and epigenetic underpinnings and outcomes of drug use, (2) the intersectionality between mental health, neurodevelopmental disorders, and drug use, and (3) the therapeutic potential of traditionally recreational drugs.",
+				orcid: "https://orcid.org/0000-0001-8023-6512",
+                researchGate: "https://www.researchgate.net/profile/Sally-Turner-7?ev=hdr_xprf"
               },
               { 
                 name: "Katie Koziell", 
                 role: "PhD Student", 
-                focus: "Roden Model of BrainHealth"
+                focus: "Rodent Model of BrainHealth"
               },
               { 
                 name: "Rosalyn Acevedo", 
                 role: "PhD Student", 
                 focus: "Role of Hyaluronan in Cognition", 
-                image: rosalynPortrait
+                image: rosalynPortrait,
+				projects: "Rosalyn is a PhD student investigating the role of the extracellular matrix component hyaluronan in cognition across lifespan. Her research explores how hyaluronan production changes with age and in response to cognitive challenge, and whether these changes are regulated by epigenetic mechanisms, linking environmental influences, ageing and cognitive health. To address these questions, Rosalyn combines molecular biology techniques with rodent behavioural experiments and analysis of long-term human cohort datasets."
               }
             ].map((member) => (
               <div key={member.name} className="group">
@@ -166,7 +171,7 @@ export default function Team() {
                    
                     <p className="text-xs leading-tight mb-4">{member.projects}</p>
                     
-                    {(member.linkedIn || member.googleScholar) && (
+                    {(member.linkedIn || member.googleScholar || member.orcid || member.researchGate) && (
                       <div className="mt-auto pt-2 border-t border-primary-foreground/20 flex gap-3">
                         {member.googleScholar && (
                           <a href={member.googleScholar} target="_blank" rel="noreferrer" className="text-xs font-medium hover:text-secondary transition-colors inline-flex items-center">
@@ -176,6 +181,16 @@ export default function Team() {
                         {member.linkedIn && (
                           <a href={member.linkedIn} target="_blank" rel="noreferrer" className="text-xs font-medium hover:text-secondary transition-colors inline-flex items-center">
                             LinkedIn
+                          </a>
+						)}
+						{member.orcid && (
+                          <a href={member.orcid} target="_blank" rel="noreferrer" className="text-xs font-medium hover:text-secondary transition-colors inline-flex items-center">
+                            ORCiD
+                          </a>
+						)}
+						{member.researchGate && (
+                          <a href={member.researchGate} target="_blank" rel="noreferrer" className="text-xs font-medium hover:text-secondary transition-colors inline-flex items-center">
+                            ResearchGate
                           </a>
                         )}
                       </div>

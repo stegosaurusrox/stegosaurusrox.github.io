@@ -46,7 +46,7 @@ export default function Home() {
               
               <div className="pt-8 border-t border-border/50 flex gap-8">
                 <div>
-                  <p className="text-3xl font-serif text-primary">78k+</p>
+                  <p className="text-3xl font-serif text-primary">60k+</p>
                   <p className="text-sm text-muted-foreground font-medium uppercase tracking-wider mt-1">Individuals Studied</p>
                 </div>
                 <div>

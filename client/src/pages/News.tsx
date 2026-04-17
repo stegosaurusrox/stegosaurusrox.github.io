@@ -1,60 +1,106 @@
 import { Calendar, ArrowRight } from "lucide-react";
 import ohbmImage from "@assets/image_1776171082134.png";
+import imgcImage from "@assets/image_1773834250249.png";
+import vivaImage from "@assets/image_1773834250250.png";
+import housingfilmImage from "@assets/image_1773834250251b.png";
+import retreatImage from "@assets/image_1773834250252b.png";
+import xmasImage from "@assets/image_1773834250253.png";
+import wcpgImage from "@assets/image_1773834250254.png";
+
+
 
 export default function News() {
   // Easy to edit news array. Add new items to the top.
   const newsItems = [
     {
-      id: 0,
-      date: "June 25, 2025",
-      title: "Lab presents at OHBM Conference",
+      id: 8,
+      date: "April, 2026",
+      title: "Lab presents at IMGC Conference",
       content: [
-        "Dr. Marlene Staginnus attended the Organization for Human Brain Mapping (OHBM) conference.",
-        "She presented her latest findings on the neurobiological markers of resilience in aging populations using large-scale MRI datasets.",
-        "Great discussions and feedback from the neuroimaging community!"
+        "Katie Koziell attended the  International Mammalian Genome conference (IMGC) in Reykjavík, Iceland. She presented her latest study on the relationship between brain health and peripheral health during ageing.",
+        "Great conversations and feedback from the community!"
       ],
-      image: ohbmImage
+      image: imgcImage
+    },
+    {
+      id: 7,
+      date: "December, 2025",
+      title: "Film screening",
+      content: [
+        "Over the past year, Faye Sanders has been working on a film about 'Housing and Health' alongside her PhD, travelling across the country to interview experts in housing and health, as well as hearing directly from people about their lived experiences. Her film helps to better understand the current state of housing in the UK, its impact on health, and highlights the stories that too often go unheard.",
+        "Well done, Faye!"
+      ],
+      image: housingfilmImage
+    },
+    
+    {
+      id: 6,
+      date: "November, 2025",
+      title: "Viva success",
+      content: [
+        "Huge congratulations to Katherine Sawyer, who passed her Viva with great success. In her research, Katherine focussed on harnessing mental health and neuroscience evidence for tobacco and cannabis health messaging.",
+        "We're all so proud of Katherine and wish her all the best for the future."
+      ],
+      image: vivaImage
     },
     {
       id: 1,
-      date: "March 15, 2025",
-      title: "BrainHealth Project Kickoff",
+      date: "September, 2025",
+      title: "Welcome to our new PhD Students",
       content: [
-        "Excited to officially launch the €1.5 million EU-funded BrainHealth project!",
-        "Our team will be analyzing data from over 78,000 individuals to track brain health across the lifespan.",
-        "Looking forward to collaborating with our partners across Europe."
+        "A warm welcome to Zoe Hart and Chris Townsend who have joined the lab this month.",
+        "Zoe will be investigating time-dependent effects and sensitive periods between epigenetics and psychosis. Chris will be employing machine learning to map structural brain deviations to psychosis risk."
+      ]
+    },
+    {
+      id: 3,
+      date: "August, 2025",
+      title: "'Unlocking cognitive health in psychosis' Project Start",
+      content: [
+        "We official started our £3.5 million Wellcome-funded project to tackle cognitive impairment in psychotic disorders. We will work with lived experience experts, combine advanced computational brain imaging methods with experimental preclinical models to pave the way for earlier interventions, better treatments, and a deeper understanding of cognitive decline in psychotic disorders."
       ],
       image: null // Add an imported image here if desired, e.g., image: myImage
     },
     {
-      id: 2,
-      date: "February 28, 2025",
-      title: "New Publication in Scientific Reports",
+      id: 5,
+      date: "March, 2025",
+      title: "Lab writing retreat",
       content: [
-        "Congratulations to Faye Sanders and the team on their new paper!",
-        "The study uses network analysis to explore how housing quality indicators relate to depression in women.",
-        "Check it out on our Publications page."
+        "We had a great time at our recent writing retreat. Perfect mix of focussed writing, great food and lots of fun.",
+        "Shout out to a fantastic team that made this experience super enjoyable."
       ],
-      link: "/publications"
+      image: retreatImage
+    },
+    {
+      id: 5,
+      date: "February, 2025",
+      title: "Post-Christmas board game social",
+      content: [
+        "How controversial - we decided to have our Christmas party in February, to give us all a lift-up during those grey winter months.",
+        "Great games and food. Merry Christmas!"
+      ],
+      image: xmasImage
     },
     {
       id: 3,
-      date: "January 10, 2025",
-      title: "Welcome to our new PhD Students",
+      date: "October, 2024",
+      title: "Lab trip to WCPG in Singapore",
       content: [
-        "A warm welcome to Sorcha Hamilton and Chris Townsend who have joined the lab this month.",
-        "Sorcha will be investigating the age-dependent effects of cannabis use using MRI and epigenetic approaches.",
-        "Chris will be employing machine learning to map subclinical psychosis."
-      ]
+        "Great science at this year's World Congress of Psychiatric Genetics.",
+        "Amazing presentations by Vilte and Faye on their latest research, with time for spare for catching up with colleagues from across the globe.",
+      ],
+      image: wcpgImage // Add an imported image here if desired, e.g., image: myImage
     },
     {
-      id: 4,
-      date: "November 5, 2024",
-      title: "ENIGMA Epigenetics Working Group Update",
+      id: 3,
+      date: "October, 2023",
+      title: "BrainHealth Project Kickoff",
       content: [
-        "Dr. Marlene Staginnus has been appointed as co-chair of the ENIGMA Epigenetics working group.",
-        "A fantastic achievement that will help drive forward global collaboration in neuroimaging and epigenetics."
-      ]
+        "Excited to officially launch the €1.5 million EU-funded BrainHealth project!",
+        "Our team will be analyzing large-scale genetic, epigenetic and MRI data to track brain health across the lifespan.",
+        "Looking forward to collaborating with our partners across Europe."
+      ],
+      image: null // Add an imported image here if desired, e.g., image: myImage
     }
   ];
 
