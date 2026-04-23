@@ -8,7 +8,7 @@ import sorchaPortrait from "@assets/image_1773834250245.png";
 import chrisPortrait from "@assets/image_1773834250246.png";
 import rosalynPortrait from "@assets/image_1773834250247.png";
 import emilyPortrait from "@assets/image_1773834250248.png";
-import katiePortrait from "@assets/image_1773834250254.png";
+import katiePortrait from "@assets/image_1773834250255.png";
 
 
 export default function Team() {
