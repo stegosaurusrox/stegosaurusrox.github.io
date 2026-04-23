@@ -137,16 +137,17 @@ export default function Team() {
                 role: "PhD Student", 
                 focus: "Substance use and ADHD", 
                 image: sallyPortrait,
-				        projects: "Sally is a PhD student with expertise in experimental psychology and psychopharmacology. Sally’s PhD research focusses on the psychobiological harms and medicinal potential of cannabis among people with and without ADHD. Sally uses a multidisciplinary approach, combining experimental, observational, longitudinal, genetic, and epigenetic methods. She is broadly interested in (1) the genetic and epigenetic underpinnings and outcomes of drug use, (2) the intersectionality between mental health, neurodevelopmental disorders, and drug use, and (3) the therapeutic potential of traditionally recreational drugs.",
-				        orcid: "https://orcid.org/0000-0001-8023-6512",
+				projects: "Sally is a PhD student with expertise in experimental psychology and psychopharmacology. Sally’s PhD research focusses on the psychobiological harms and medicinal potential of cannabis among people with and without ADHD. Sally uses a multidisciplinary approach, combining experimental, observational, longitudinal, genetic, and epigenetic methods. She is broadly interested in (1) the genetic and epigenetic underpinnings and outcomes of drug use, (2) the intersectionality between mental health, neurodevelopmental disorders, and drug use, and (3) the therapeutic potential of traditionally recreational drugs.",
+				orcid: "https://orcid.org/0000-0001-8023-6512",
                 researchGate: "https://www.researchgate.net/profile/Sally-Turner-7?ev=hdr_xprf"
               },
               { 
                 name: "Katie Koziell", 
                 role: "PhD Student", 
-                focus: "Rodent Model of BrainHealth"
-        				projects: "Katie is a PhD student interested in exploring the relationship between physical and mental health during ageing. Her research focuses on how altered metabolism impacts the brain and peripheral health with age, using a mouse model of Grb10. To investigate this, she employs an interdisciplinary approach combining neuroimaging, epigenetics, transcriptomics and histological analyses to characterise age-related changes across tissues. Through this work, she aims to elucidate how closely brain and peripheral health are linked during ageing, and whether these changes are tissue-specific or system-wide.",
-				        linkedIn: "https://www.linkedin.com/in/katarina-koziell-6133383b7/"
+                focus: "Rodent Model of BrainHealth",
+				image: katiePortrait,
+        		projects: "Katie is a PhD student interested in exploring the relationship between physical and mental health during ageing. Her research focuses on how altered metabolism impacts the brain and peripheral health with age, using a mouse model of Grb10. To investigate this, she employs an interdisciplinary approach combining neuroimaging, epigenetics, transcriptomics and histological analyses to characterise age-related changes across tissues. Through this work, she aims to elucidate how closely brain and peripheral health are linked during ageing, and whether these changes are tissue-specific or system-wide.",
+				linkedIn: "https://www.linkedin.com/in/katarina-koziell-6133383b7/"
               },
               { 
                 name: "Rosalyn Acevedo", 
