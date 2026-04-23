@@ -8,6 +8,7 @@ import sorchaPortrait from "@assets/image_1773834250245.png";
 import chrisPortrait from "@assets/image_1773834250246.png";
 import rosalynPortrait from "@assets/image_1773834250247.png";
 import emilyPortrait from "@assets/image_1773834250248.png";
+import katiePortrait from "@assets/image_1773834250254.png";
 
 
 export default function Team() {
@@ -136,21 +137,23 @@ export default function Team() {
                 role: "PhD Student", 
                 focus: "Substance use and ADHD", 
                 image: sallyPortrait,
-				projects: "Sally is a PhD student with expertise in experimental psychology and psychopharmacology. Sally’s PhD research focusses on the psychobiological harms and medicinal potential of cannabis among people with and without ADHD. Sally uses a multidisciplinary approach, combining experimental, observational, longitudinal, genetic, and epigenetic methods. She is broadly interested in (1) the genetic and epigenetic underpinnings and outcomes of drug use, (2) the intersectionality between mental health, neurodevelopmental disorders, and drug use, and (3) the therapeutic potential of traditionally recreational drugs.",
-				orcid: "https://orcid.org/0000-0001-8023-6512",
+				        projects: "Sally is a PhD student with expertise in experimental psychology and psychopharmacology. Sally’s PhD research focusses on the psychobiological harms and medicinal potential of cannabis among people with and without ADHD. Sally uses a multidisciplinary approach, combining experimental, observational, longitudinal, genetic, and epigenetic methods. She is broadly interested in (1) the genetic and epigenetic underpinnings and outcomes of drug use, (2) the intersectionality between mental health, neurodevelopmental disorders, and drug use, and (3) the therapeutic potential of traditionally recreational drugs.",
+				        orcid: "https://orcid.org/0000-0001-8023-6512",
                 researchGate: "https://www.researchgate.net/profile/Sally-Turner-7?ev=hdr_xprf"
               },
               { 
                 name: "Katie Koziell", 
                 role: "PhD Student", 
                 focus: "Rodent Model of BrainHealth"
+        				projects: "Katie is a PhD student interested in exploring the relationship between physical and mental health during ageing. Her research focuses on how altered metabolism impacts the brain and peripheral health with age, using a mouse model of Grb10. To investigate this, she employs an interdisciplinary approach combining neuroimaging, epigenetics, transcriptomics and histological analyses to characterise age-related changes across tissues. Through this work, she aims to elucidate how closely brain and peripheral health are linked during ageing, and whether these changes are tissue-specific or system-wide.",
+				        linkedIn: "https://www.linkedin.com/in/katarina-koziell-6133383b7/"
               },
               { 
                 name: "Rosalyn Acevedo", 
                 role: "PhD Student", 
                 focus: "Role of Hyaluronan in Cognition", 
                 image: rosalynPortrait,
-				projects: "Rosalyn is a PhD student investigating the role of the extracellular matrix component hyaluronan in cognition across lifespan. Her research explores how hyaluronan production changes with age and in response to cognitive challenge, and whether these changes are regulated by epigenetic mechanisms, linking environmental influences, ageing and cognitive health. To address these questions, Rosalyn combines molecular biology techniques with rodent behavioural experiments and analysis of long-term human cohort datasets."
+				        projects: "Rosalyn is a PhD student investigating the role of the extracellular matrix component hyaluronan in cognition across lifespan. Her research explores how hyaluronan production changes with age and in response to cognitive challenge, and whether these changes are regulated by epigenetic mechanisms, linking environmental influences, ageing and cognitive health. To address these questions, Rosalyn combines molecular biology techniques with rodent behavioural experiments and analysis of long-term human cohort datasets."
               }
             ].map((member) => (
               <div key={member.name} className="group">
